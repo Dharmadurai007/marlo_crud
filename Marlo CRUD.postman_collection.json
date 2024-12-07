@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "37159355-2906-48cf-b79c-311988b2d1f0",
+		"name": "Marlo CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26794775"
+	},
+	"item": [
+		{
+			"name": "health_status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8078"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email_id\":\"dharmadurai831@gmail.com\",\"password\":\"dharma@0209\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8078/login"
+			},
+			"response": []
+		}
+	]
+}
