@@ -1,0 +1,62 @@
+# marlo_users
+-----------------
+
+{
+    "mappings": {
+      "properties": {
+        "@created_date": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "@modified_date": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "role": {
+          "type": "text"
+        },
+        "email_id": {
+          "type": "text"
+        },
+        "password": {
+          "type": "text"
+        },
+        "id": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+
+
+# marlo_data
+
+{
+    "mappings": {
+      "properties": {
+        "@created_date": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "@modified_date": {
+          "type": "date",
+          "format": "epoch_second"
+        },
+        "name": {
+          "type": "text"
+        },
+        "group": {
+          "type": "text"
+        },
+        "id": {
+          "type": "text"
+        },
+        "date": {
+          "type": "text"
+        },
+        "value": {
+          "type": "integer"
+        }
+      }
+    }
+  }
