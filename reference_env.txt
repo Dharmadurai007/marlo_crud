@@ -1,0 +1,10 @@
+FLASK_ENV = 'DevConfig'
+
+# ELASTIC CONFIG
+ELASTIC_IP = "http://localhost:9200/"
+ELASTIC_USERNAME = "elastic"
+ELASTIC_PASSWORD = "xxxxxxxxxxxxxxxxxxxxxx"
+
+# ELASTIC INDEXS
+ELASTIC_MARLO_USERS_INDEX = "marlo_users"
+ELASTIC_MARLO_DATA_INDEX = "marlo_data"

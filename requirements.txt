@@ -1,0 +1,7 @@
+flask_cors==4.0.0
+python-dotenv==1.0.1
+flask_wtf==1.2.1
+waitress==3.0.0
+flask_marshmallow==1.2.1
+requests==2.31.0
+elasticsearch==8.13.0

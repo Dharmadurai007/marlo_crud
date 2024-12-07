@@ -1,0 +1,1070 @@
+2024-12-07 11:46:44,981 — app — DEBUG —  timeit.py — _validate_schema 2.1109580993652344 ms
+2024-12-07 11:46:44,988 — app — DEBUG —  timeit.py — get_request 9.886741638183594 ms
+2024-12-07 11:46:44,993 — app — INFO —  login.py — Login is begun!
+2024-12-07 11:46:45,050 — app — INFO —  login.py — Role checking!
+2024-12-07 11:46:45,058 — app — INFO —  login.py — Password checking!
+2024-12-07 11:46:45,061 — app — DEBUG —  timeit.py — check_password 2.998828887939453 ms
+2024-12-07 11:46:45,062 — app — DEBUG —  timeit.py — check_role 12.422561645507812 ms
+2024-12-07 11:46:45,064 — app — DEBUG —  timeit.py — login 71.11167907714844 ms
+2024-12-07 11:46:58,817 — app — DEBUG —  timeit.py — _validate_schema 1.1453628540039062 ms
+2024-12-07 11:46:58,824 — app — DEBUG —  timeit.py — get_request 8.23974609375 ms
+2024-12-07 11:46:58,827 — app — INFO —  login.py — Login is begun!
+2024-12-07 11:46:58,860 — app — INFO —  login.py — Role checking!
+2024-12-07 11:46:58,861 — app — INFO —  login.py — Password checking!
+2024-12-07 11:46:58,862 — app — DEBUG —  timeit.py — check_password 1.0547637939453125 ms
+2024-12-07 11:46:58,863 — app — DEBUG —  timeit.py — check_role 3.2393932342529297 ms
+2024-12-07 11:46:58,864 — app — DEBUG —  timeit.py — login 36.757707595825195 ms
+2024-12-07 11:53:19,898 — app — DEBUG —  timeit.py — _validate_schema 0.2739429473876953 ms
+2024-12-07 11:53:19,899 — app — DEBUG —  timeit.py — get_request 1.4750957489013672 ms
+2024-12-07 11:53:19,901 — app — INFO —  login.py — Login is begun!
+2024-12-07 11:53:19,930 — app — INFO —  login.py — Role checking!
+2024-12-07 11:53:19,933 — app — INFO —  login.py — Password checking!
+2024-12-07 11:53:19,934 — app — DEBUG —  timeit.py — check_password 0.9336471557617188 ms
+2024-12-07 11:53:19,936 — app — DEBUG —  timeit.py — check_role 5.18345832824707 ms
+2024-12-07 11:53:19,945 — app — DEBUG —  timeit.py — login 43.70832443237305 ms
+2024-12-07 11:53:45,033 — app — DEBUG —  timeit.py — _validate_schema 0.20813941955566406 ms
+2024-12-07 11:53:45,034 — app — DEBUG —  timeit.py — get_request 1.3136863708496094 ms
+2024-12-07 11:53:45,035 — app — INFO —  login.py — Login is begun!
+2024-12-07 11:53:45,065 — app — INFO —  login.py — Role checking!
+2024-12-07 11:53:45,085 — app — INFO —  login.py — Password checking!
+2024-12-07 11:53:45,095 — app — DEBUG —  timeit.py — check_password 10.024070739746094 ms
+2024-12-07 11:53:45,097 — app — DEBUG —  timeit.py — check_role 32.11092948913574 ms
+2024-12-07 11:53:45,098 — app — DEBUG —  timeit.py — login 63.45319747924805 ms
+2024-12-07 13:21:19,411 — app — DEBUG —  timeit.py — _validate_schema 0.6754398345947266 ms
+2024-12-07 13:21:19,413 — app — DEBUG —  timeit.py — get_request 3.239870071411133 ms
+2024-12-07 13:21:19,415 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:21:19,460 — app — INFO —  login.py — Role checking!
+2024-12-07 13:21:19,471 — app — INFO —  login.py — Password checking!
+2024-12-07 13:21:19,474 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:21:19,483 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:21:19,484 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:21:19,485 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:21:19,486 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:21:19,489 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:21:19,490 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:21:19,497 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:21:19,498 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:21:19,500 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:21:19,501 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+2024-12-07 13:21:19,584 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/util.py", line 27, in read_variable_from_environment
+    raise AssertionError(
+AssertionError: (6001, 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 26, in get_tanker_or_bulk_data
+    data = SearchData().match_data_by_two_fields_no_size(Utils().read_variable_from_environment("ELASTIC_ELASTIC_MARLO_DATA_INDEX"),"group",role, "date", self.get_current_date())
+  File "/mnt/d/interview_qa/marlo_crud/app/src/util.py", line 40, in read_variable_from_environment
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 57, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 31, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 68, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 62, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 75, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 6001, 'error_message': 'Variable ELASTIC_ELASTIC_MARLO_DATA_INDEX not found in env', 'service_error_code': 6005}
+
+2024-12-07 13:21:19,585 — app — DEBUG —  timeit.py — _get_error_series 0.0073909759521484375 ms
+2024-12-07 13:21:19,586 — app — DEBUG —  timeit.py — _form_error_response 0.0095367431640625 ms
+2024-12-07 13:21:19,587 — app — DEBUG —  timeit.py — handle_error 2.4437904357910156 ms
+2024-12-07 13:22:06,159 — app — DEBUG —  timeit.py — _validate_schema 0.4966259002685547 ms
+2024-12-07 13:22:06,161 — app — DEBUG —  timeit.py — get_request 1.950979232788086 ms
+2024-12-07 13:22:06,168 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:22:06,208 — app — INFO —  login.py — Role checking!
+2024-12-07 13:22:06,211 — app — INFO —  login.py — Password checking!
+2024-12-07 13:22:06,214 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:22:06,215 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:22:06,216 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:22:06,217 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:22:06,218 — app — DEBUG —  timeit.py — get_current_date 1.0979175567626953 ms
+2024-12-07 13:22:06,274 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 52.38509178161621 ms
+2024-12-07 13:22:06,280 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:22:06,281 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:22:06,283 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:22:06,284 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:22:06,285 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:22:06,292 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:22:06,294 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:22:06,296 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+2024-12-07 13:22:06,408 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 27, in get_tanker_or_bulk_data
+    return self.get_admin_dashboard_metrics(data)
+AttributeError: 'GetData' object has no attribute 'get_admin_dashboard_metrics'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 57, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 31, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 68, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 62, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 75, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+2024-12-07 13:22:06,410 — app — DEBUG —  timeit.py — _get_error_series 0.011682510375976562 ms
+2024-12-07 13:22:06,413 — app — DEBUG —  timeit.py — _form_error_response 0.009059906005859375 ms
+2024-12-07 13:22:06,424 — app — DEBUG —  timeit.py — handle_error 14.118671417236328 ms
+2024-12-07 13:22:33,559 — app — DEBUG —  timeit.py — _validate_schema 0.6840229034423828 ms
+2024-12-07 13:22:33,560 — app — DEBUG —  timeit.py — get_request 2.3369789123535156 ms
+2024-12-07 13:22:33,571 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:22:33,612 — app — INFO —  login.py — Role checking!
+2024-12-07 13:22:33,614 — app — INFO —  login.py — Password checking!
+2024-12-07 13:22:33,616 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:22:33,621 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:22:33,625 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:22:33,627 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:22:33,628 — app — DEBUG —  timeit.py — get_current_date 1.1227130889892578 ms
+2024-12-07 13:22:33,648 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 18.845319747924805 ms
+2024-12-07 13:22:33,649 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:22:33,655 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:22:33,658 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:22:33,659 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:22:33,661 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:22:33,662 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:22:33,663 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:22:33,665 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+2024-12-07 13:22:33,738 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 28, in get_tanker_or_bulk_data
+    return self.get_admin_dashboard_metrics(data)
+AttributeError: 'GetData' object has no attribute 'get_admin_dashboard_metrics'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 58, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 32, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 69, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 63, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 76, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+2024-12-07 13:22:33,739 — app — DEBUG —  timeit.py — _get_error_series 0.009298324584960938 ms
+2024-12-07 13:22:33,740 — app — DEBUG —  timeit.py — _form_error_response 0.009775161743164062 ms
+2024-12-07 13:22:33,741 — app — DEBUG —  timeit.py — handle_error 2.3369789123535156 ms
+2024-12-07 13:26:51,371 — app — DEBUG —  timeit.py — _validate_schema 0.4458427429199219 ms
+2024-12-07 13:26:51,372 — app — DEBUG —  timeit.py — get_request 1.6279220581054688 ms
+2024-12-07 13:26:51,374 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:26:51,605 — app — INFO —  login.py — Role checking!
+2024-12-07 13:26:51,606 — app — INFO —  login.py — Password checking!
+2024-12-07 13:26:51,608 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:26:51,616 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:26:51,617 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:26:51,618 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:26:51,619 — app — DEBUG —  timeit.py — get_current_date 0.9617805480957031 ms
+2024-12-07 13:26:51,620 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:26:51,622 — app — DEBUG —  timeit.py — get_current_date 1.7006397247314453 ms
+2024-12-07 13:26:51,669 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 46.22054100036621 ms
+2024-12-07 13:26:51,671 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:26:51,672 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:26:51,674 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:26:51,680 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:26:51,681 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:26:51,682 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:26:51,683 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:26:51,684 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+2024-12-07 13:26:51,740 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 28, in get_tanker_or_bulk_data
+    return self.get_admin_dashboard_metrics(data)
+AttributeError: 'GetData' object has no attribute 'get_admin_dashboard_metrics'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 58, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 32, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 69, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 63, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 76, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+2024-12-07 13:26:51,741 — app — DEBUG —  timeit.py — _get_error_series 0.010728836059570312 ms
+2024-12-07 13:26:51,744 — app — DEBUG —  timeit.py — _form_error_response 0.0095367431640625 ms
+2024-12-07 13:26:51,745 — app — DEBUG —  timeit.py — handle_error 4.18853759765625 ms
+2024-12-07 13:27:13,485 — app — DEBUG —  timeit.py — _validate_schema 0.6422996520996094 ms
+2024-12-07 13:27:13,492 — app — DEBUG —  timeit.py — get_request 8.2550048828125 ms
+2024-12-07 13:27:13,494 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:27:13,497 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:27:13,498 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:27:13,501 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 2007, 'error_message': 'Failed to parse: http://localhost:9200marlo_users/_search/', 'service_error_code': 2005}
+2024-12-07 13:27:13,563 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/urllib3/util/url.py", line 425, in parse_url
+    host, port = _HOST_PORT_RE.match(host_port).groups()  # type: ignore[union-attr]
+AttributeError: 'NoneType' object has no attribute 'groups'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/requests/models.py", line 434, in prepare_url
+    scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "/home/dharma/vrma/lib/python3.10/site-packages/urllib3/util/url.py", line 451, in parse_url
+    raise LocationParseError(source_url) from e
+urllib3.exceptions.LocationParseError: Failed to parse: http://localhost:9200marlo_users/_search/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/elastic_middleware/search_data.py", line 134, in is_exist_value
+    response = ElasticConnector().search(index, body)
+  File "/mnt/d/interview_qa/marlo_crud/app/data_connector/elastic_connector.py", line 411, in search
+    search_results = requests.post(
+  File "/home/dharma/vrma/lib/python3.10/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/home/dharma/vrma/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/dharma/vrma/lib/python3.10/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/home/dharma/vrma/lib/python3.10/site-packages/requests/sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "/home/dharma/vrma/lib/python3.10/site-packages/requests/models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "/home/dharma/vrma/lib/python3.10/site-packages/requests/models.py", line 436, in prepare_url
+    raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: http://localhost:9200marlo_users/_search/
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 66, in login
+    is_user = SearchData().is_exist_value(Utils().read_variable_from_environment("ELASTIC_MARLO_USERS_INDEX"),"email_id",email_id)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/elastic_middleware/search_data.py", line 142, in is_exist_value
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 2007, 'error_message': 'Failed to parse: http://localhost:9200marlo_users/_search/', 'service_error_code': 2005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 2007, 'error_message': 'Failed to parse: http://localhost:9200marlo_users/_search/', 'service_error_code': 2005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 2007, 'error_message': 'Failed to parse: http://localhost:9200marlo_users/_search/', 'service_error_code': 2005}
+
+2024-12-07 13:27:13,564 — app — DEBUG —  timeit.py — _get_error_series 0.011682510375976562 ms
+2024-12-07 13:27:13,568 — app — DEBUG —  timeit.py — _form_error_response 0.011444091796875 ms
+2024-12-07 13:27:13,571 — app — DEBUG —  timeit.py — handle_error 6.72149658203125 ms
+2024-12-07 13:27:30,819 — app — DEBUG —  timeit.py — _validate_schema 0.7221698760986328 ms
+2024-12-07 13:27:30,822 — app — DEBUG —  timeit.py — get_request 4.149198532104492 ms
+2024-12-07 13:27:30,832 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:27:30,873 — app — INFO —  login.py — Role checking!
+2024-12-07 13:27:30,895 — app — INFO —  login.py — Password checking!
+2024-12-07 13:27:30,896 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:27:30,897 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:27:30,899 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:27:30,901 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:27:30,902 — app — DEBUG —  timeit.py — get_current_date 1.0950565338134766 ms
+2024-12-07 13:27:30,903 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:27:30,911 — app — DEBUG —  timeit.py — get_current_date 8.081674575805664 ms
+2024-12-07 13:27:30,933 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 20.67255973815918 ms
+2024-12-07 13:27:30,934 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:27:30,935 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:27:30,936 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:27:30,945 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:27:30,947 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:27:30,948 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:27:30,949 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:27:30,950 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+2024-12-07 13:27:31,033 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 28, in get_tanker_or_bulk_data
+    return self.get_admin_dashboard_metrics(data)
+AttributeError: 'GetData' object has no attribute 'get_admin_dashboard_metrics'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 58, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 32, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 69, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 63, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 76, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+2024-12-07 13:27:31,035 — app — DEBUG —  timeit.py — _get_error_series 0.011444091796875 ms
+2024-12-07 13:27:31,052 — app — DEBUG —  timeit.py — _form_error_response 0.012636184692382812 ms
+2024-12-07 13:27:31,068 — app — DEBUG —  timeit.py — handle_error 32.820940017700195 ms
+2024-12-07 13:30:12,061 — app — CRITICAL —  __init__.py — Error in config service - 405 Method Not Allowed: The method is not allowed for the requested URL.
+2024-12-07 13:30:12,071 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 854, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 463, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/home/dharma/vrma/lib/python3.10/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+
+2024-12-07 13:30:12,075 — app — DEBUG —  timeit.py — handle_error 0.018358230590820312 ms
+2024-12-07 13:30:15,411 — app — DEBUG —  timeit.py — _validate_schema 0.514984130859375 ms
+2024-12-07 13:30:15,412 — app — DEBUG —  timeit.py — get_request 1.6865730285644531 ms
+2024-12-07 13:30:15,413 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:30:15,451 — app — INFO —  login.py — Role checking!
+2024-12-07 13:30:15,454 — app — INFO —  login.py — Password checking!
+2024-12-07 13:30:15,465 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:30:15,468 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:30:15,469 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:30:15,472 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:30:15,478 — app — DEBUG —  timeit.py — get_current_date 5.504369735717773 ms
+2024-12-07 13:30:15,479 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:30:15,480 — app — DEBUG —  timeit.py — get_current_date 1.0769367218017578 ms
+2024-12-07 13:30:15,500 — app — DEBUG —  timeit.py — match_data_by_two_fields 18.89491081237793 ms
+2024-12-07 13:30:15,502 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:30:15,503 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:30:15,504 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:30:15,509 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:30:15,510 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:30:15,511 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:30:15,512 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:30:15,513 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+2024-12-07 13:30:15,584 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 28, in get_tanker_or_bulk_data
+    return self.get_admin_dashboard_metrics(data)
+AttributeError: 'GetData' object has no attribute 'get_admin_dashboard_metrics'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 58, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 32, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 69, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 63, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 76, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+2024-12-07 13:30:15,585 — app — DEBUG —  timeit.py — _get_error_series 0.013589859008789062 ms
+2024-12-07 13:30:15,586 — app — DEBUG —  timeit.py — _form_error_response 0.009059906005859375 ms
+2024-12-07 13:30:15,590 — app — DEBUG —  timeit.py — handle_error 5.216121673583984 ms
+2024-12-07 13:31:17,003 — app — DEBUG —  timeit.py — _validate_schema 0.8029937744140625 ms
+2024-12-07 13:31:17,040 — app — DEBUG —  timeit.py — get_request 38.054466247558594 ms
+2024-12-07 13:31:17,064 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:31:17,141 — app — INFO —  login.py — Role checking!
+2024-12-07 13:31:17,190 — app — INFO —  login.py — Password checking!
+2024-12-07 13:31:17,206 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:31:17,211 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:31:17,222 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:31:17,225 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:31:17,227 — app — DEBUG —  timeit.py — get_current_date 2.146005630493164 ms
+2024-12-07 13:31:17,229 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:31:17,231 — app — DEBUG —  timeit.py — get_current_date 1.8911361694335938 ms
+2024-12-07 13:31:17,260 — app — DEBUG —  timeit.py — match_data_by_two_fields 22.084474563598633 ms
+2024-12-07 13:31:17,262 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:31:17,263 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:31:17,270 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:31:17,273 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:31:17,274 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:31:17,276 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:31:17,278 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:31:17,279 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+2024-12-07 13:31:17,408 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 28, in get_tanker_or_bulk_data
+    return self.get_admin_dashboard_metrics(data)
+AttributeError: 'GetData' object has no attribute 'get_admin_dashboard_metrics'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 58, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 32, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 69, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 63, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 76, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+2024-12-07 13:31:17,409 — app — DEBUG —  timeit.py — _get_error_series 0.012159347534179688 ms
+2024-12-07 13:31:17,410 — app — DEBUG —  timeit.py — _form_error_response 0.009298324584960938 ms
+2024-12-07 13:31:17,412 — app — DEBUG —  timeit.py — handle_error 2.483844757080078 ms
+2024-12-07 13:32:19,958 — app — DEBUG —  timeit.py — _validate_schema 0.43892860412597656 ms
+2024-12-07 13:32:19,961 — app — DEBUG —  timeit.py — get_request 3.3915042877197266 ms
+2024-12-07 13:32:19,963 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:32:20,012 — app — INFO —  login.py — Role checking!
+2024-12-07 13:32:20,017 — app — INFO —  login.py — Password checking!
+2024-12-07 13:32:20,018 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:32:20,019 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:32:20,020 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:32:20,022 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:32:20,023 — app — DEBUG —  timeit.py — get_current_date 0.9996891021728516 ms
+2024-12-07 13:32:20,039 — app — CRITICAL —  get_data.py — Error in fetch the Bulk data!
+2024-12-07 13:32:20,040 — app — CRITICAL —  get_data.py — Error in role checking!
+2024-12-07 13:32:20,045 — app — CRITICAL —  get_data.py — Error in fetch the data!
+2024-12-07 13:32:20,049 — app — CRITICAL —  login.py — Error in login passsword check!
+2024-12-07 13:32:20,050 — app — CRITICAL —  login.py — Error in login role check!
+2024-12-07 13:32:20,052 — app — CRITICAL —  login.py — Error in login!
+2024-12-07 13:32:20,053 — app — CRITICAL —  auth.py — Error in login!
+2024-12-07 13:32:20,054 — app — CRITICAL —  __init__.py — Error in config service - {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+2024-12-07 13:32:20,122 — app — DEBUG —  __init__.py — Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 28, in get_tanker_or_bulk_data
+    return self.get_admin_dashboard_metrics(data)
+AttributeError: 'GetData' object has no attribute 'get_admin_dashboard_metrics'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 58, in get_role_based_data
+    bulk_data = self.get_tanker_or_bulk_data(role)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 32, in get_tanker_or_bulk_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 69, in get_data
+    response = self.get_role_based_data(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 63, in get_role_based_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 18, in check_password
+    output = GetData().get_data(response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/data_crud/get_data.py", line 76, in get_data
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 32, in check_role
+    return self.check_password(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 25, in check_password
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 69, in login
+    return self.check_role(data, response)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 37, in check_role
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 49, in login
+    response = Auth().login(data)
+  File "/mnt/d/interview_qa/marlo_crud/app/utils/timeit.py", line 10, in timed
+    result = method(*args, **kw)
+  File "/mnt/d/interview_qa/marlo_crud/app/src/login/login.py", line 74, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/dharma/vrma/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/d/interview_qa/marlo_crud/app/route/login/auth.py", line 54, in login
+    raise RuntimeError(error) from exc
+RuntimeError: {'error_code': 1005, 'error_message': '', 'service_error_code': 1005}
+
+2024-12-07 13:32:20,124 — app — DEBUG —  timeit.py — _get_error_series 0.010251998901367188 ms
+2024-12-07 13:32:20,128 — app — DEBUG —  timeit.py — _form_error_response 0.013589859008789062 ms
+2024-12-07 13:32:20,132 — app — DEBUG —  timeit.py — handle_error 7.629156112670898 ms
+2024-12-07 13:33:10,351 — app — DEBUG —  timeit.py — _validate_schema 0.7555484771728516 ms
+2024-12-07 13:33:10,353 — app — DEBUG —  timeit.py — get_request 2.644777297973633 ms
+2024-12-07 13:33:10,358 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:33:10,407 — app — INFO —  login.py — Role checking!
+2024-12-07 13:33:10,414 — app — INFO —  login.py — Password checking!
+2024-12-07 13:33:10,416 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:33:10,417 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:33:10,419 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:33:10,428 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:33:10,430 — app — DEBUG —  timeit.py — get_current_date 1.3723373413085938 ms
+2024-12-07 13:33:10,452 — app — DEBUG —  timeit.py — get_tanker_or_bulk_data 33.00738334655762 ms
+2024-12-07 13:33:10,458 — app — DEBUG —  timeit.py — get_role_based_data 40.18759727478027 ms
+2024-12-07 13:33:10,460 — app — DEBUG —  timeit.py — get_data 44.454097747802734 ms
+2024-12-07 13:33:10,461 — app — DEBUG —  timeit.py — check_password 46.70310020446777 ms
+2024-12-07 13:33:10,462 — app — DEBUG —  timeit.py — check_role 55.01127243041992 ms
+2024-12-07 13:33:10,463 — app — DEBUG —  timeit.py — login 105.31949996948242 ms
+2024-12-07 13:34:16,025 — app — DEBUG —  timeit.py — _validate_schema 0.45299530029296875 ms
+2024-12-07 13:34:16,026 — app — DEBUG —  timeit.py — get_request 1.6455650329589844 ms
+2024-12-07 13:34:16,029 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:34:16,073 — app — INFO —  login.py — Role checking!
+2024-12-07 13:34:16,075 — app — INFO —  login.py — Password checking!
+2024-12-07 13:34:16,076 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:34:16,077 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:34:16,079 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:34:16,086 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:34:16,088 — app — DEBUG —  timeit.py — get_current_date 1.5599727630615234 ms
+2024-12-07 13:34:16,104 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 15.582084655761719 ms
+2024-12-07 13:34:16,107 — app — DEBUG —  timeit.py — get_tanker_or_bulk_data 28.153181076049805 ms
+2024-12-07 13:34:16,109 — app — DEBUG —  timeit.py — get_role_based_data 32.06229209899902 ms
+2024-12-07 13:34:16,110 — app — DEBUG —  timeit.py — get_data 34.354209899902344 ms
+2024-12-07 13:34:16,112 — app — DEBUG —  timeit.py — check_password 37.08052635192871 ms
+2024-12-07 13:34:16,115 — app — DEBUG —  timeit.py — check_role 42.087554931640625 ms
+2024-12-07 13:34:16,117 — app — DEBUG —  timeit.py — login 87.33606338500977 ms
+2024-12-07 13:41:33,279 — app — DEBUG —  timeit.py — _validate_schema 0.3561973571777344 ms
+2024-12-07 13:41:33,283 — app — DEBUG —  timeit.py — get_request 4.597187042236328 ms
+2024-12-07 13:41:33,285 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:41:33,315 — app — INFO —  login.py — Role checking!
+2024-12-07 13:41:33,316 — app — INFO —  login.py — Password checking!
+2024-12-07 13:41:33,317 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:41:33,319 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:41:33,322 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:41:33,325 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:41:33,327 — app — DEBUG —  timeit.py — get_current_date 2.3255348205566406 ms
+2024-12-07 13:41:33,344 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 15.782833099365234 ms
+2024-12-07 13:41:33,346 — app — DEBUG —  timeit.py — get_tanker_or_bulk_data 24.043798446655273 ms
+2024-12-07 13:41:33,347 — app — DEBUG —  timeit.py — get_role_based_data 28.431177139282227 ms
+2024-12-07 13:41:33,348 — app — DEBUG —  timeit.py — get_data 30.853271484375 ms
+2024-12-07 13:41:33,349 — app — DEBUG —  timeit.py — check_password 32.85956382751465 ms
+2024-12-07 13:41:33,350 — app — DEBUG —  timeit.py — check_role 34.99102592468262 ms
+2024-12-07 13:41:33,351 — app — DEBUG —  timeit.py — login 66.38050079345703 ms
+2024-12-07 13:57:41,230 — app — DEBUG —  timeit.py — _validate_schema 0.6952285766601562 ms
+2024-12-07 13:57:41,233 — app — DEBUG —  timeit.py — get_request 4.105091094970703 ms
+2024-12-07 13:57:41,235 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:57:41,269 — app — INFO —  login.py — Role checking!
+2024-12-07 13:57:41,281 — app — INFO —  login.py — Password checking!
+2024-12-07 13:57:41,282 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:57:41,284 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:57:41,285 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:57:41,287 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:57:41,298 — app — DEBUG —  timeit.py — get_current_date 11.0626220703125 ms
+2024-12-07 13:57:41,317 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 17.209768295288086 ms
+2024-12-07 13:57:41,318 — app — DEBUG —  timeit.py — get_tanker_or_bulk_data 33.498287200927734 ms
+2024-12-07 13:57:41,320 — app — DEBUG —  timeit.py — get_role_based_data 35.872697830200195 ms
+2024-12-07 13:57:41,321 — app — DEBUG —  timeit.py — get_data 38.89799118041992 ms
+2024-12-07 13:57:41,325 — app — DEBUG —  timeit.py — check_password 43.54715347290039 ms
+2024-12-07 13:57:41,329 — app — DEBUG —  timeit.py — check_role 60.881853103637695 ms
+2024-12-07 13:57:41,331 — app — DEBUG —  timeit.py — login 95.54076194763184 ms
+2024-12-07 13:57:43,497 — app — DEBUG —  timeit.py — _validate_schema 0.19884109497070312 ms
+2024-12-07 13:57:43,499 — app — DEBUG —  timeit.py — get_request 1.4126300811767578 ms
+2024-12-07 13:57:43,500 — app — INFO —  login.py — Login is begun!
+2024-12-07 13:57:43,527 — app — INFO —  login.py — Role checking!
+2024-12-07 13:57:43,530 — app — INFO —  login.py — Password checking!
+2024-12-07 13:57:43,531 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 13:57:43,533 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 13:57:43,535 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 13:57:43,536 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 13:57:43,538 — app — DEBUG —  timeit.py — get_current_date 1.6317367553710938 ms
+2024-12-07 13:57:43,558 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 13.835430145263672 ms
+2024-12-07 13:57:43,561 — app — DEBUG —  timeit.py — get_tanker_or_bulk_data 26.31235122680664 ms
+2024-12-07 13:57:43,563 — app — DEBUG —  timeit.py — get_role_based_data 30.25197982788086 ms
+2024-12-07 13:57:43,565 — app — DEBUG —  timeit.py — get_data 33.330440521240234 ms
+2024-12-07 13:57:43,566 — app — DEBUG —  timeit.py — check_password 35.817623138427734 ms
+2024-12-07 13:57:43,567 — app — DEBUG —  timeit.py — check_role 40.66920280456543 ms
+2024-12-07 13:57:43,569 — app — DEBUG —  timeit.py — login 68.8941478729248 ms
+2024-12-07 14:05:06,886 — app — DEBUG —  timeit.py — _validate_schema 0.8013248443603516 ms
+2024-12-07 14:05:06,888 — app — DEBUG —  timeit.py — get_request 2.788066864013672 ms
+2024-12-07 14:05:06,890 — app — INFO —  login.py — Login is begun!
+2024-12-07 14:05:06,922 — app — INFO —  login.py — Role checking!
+2024-12-07 14:05:06,926 — app — INFO —  login.py — Password checking!
+2024-12-07 14:05:06,928 — app — INFO —  get_data.py — Data fetching is begun!
+2024-12-07 14:05:06,936 — app — INFO —  get_data.py — check role is begun!
+2024-12-07 14:05:06,939 — app — INFO —  get_data.py — Bulk data fetching is begun!
+2024-12-07 14:05:06,940 — app — INFO —  get_data.py — Current date fetching is begun!
+2024-12-07 14:05:06,942 — app — DEBUG —  timeit.py — get_current_date 1.2254714965820312 ms
+2024-12-07 14:05:06,959 — app — DEBUG —  timeit.py — match_data_by_two_fields_no_size 15.878915786743164 ms
+2024-12-07 14:05:06,961 — app — INFO —  get_data.py — preprocess_data is begun!
+2024-12-07 14:05:06,963 — app — DEBUG —  timeit.py — preprocess_data 2.7496814727783203 ms
+2024-12-07 14:05:06,964 — app — DEBUG —  timeit.py — get_tanker_or_bulk_data 25.30956268310547 ms
+2024-12-07 14:05:06,967 — app — DEBUG —  timeit.py — get_role_based_data 30.023574829101562 ms
+2024-12-07 14:05:06,969 — app — DEBUG —  timeit.py — get_data 41.43166542053223 ms
+2024-12-07 14:05:06,970 — app — DEBUG —  timeit.py — check_password 44.5706844329834 ms
+2024-12-07 14:05:06,971 — app — DEBUG —  timeit.py — check_role 49.149513244628906 ms
+2024-12-07 14:05:06,972 — app — DEBUG —  timeit.py — login 81.88605308532715 ms
