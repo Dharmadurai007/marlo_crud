@@ -22,17 +22,6 @@ class Config:
         60: "SYSTEM_ERROR_MESSAGE",
     }
     
-    SERVER_ERROR_MESSAGE = {
-        112: {
-            "internal_message": "Invalid credentials!, Something went wrong from file storage server!",
-            "external_message": EXTERNAL_ERROR_MESSAGE,
-        },
-        110:{
-            "internal_message": "Something went wrong from server side or Connection timed out!",
-            "external_message": EXTERNAL_ERROR_MESSAGE,
-        }
-
-    }
 
     SERVICE_ERROR_MESSAGE = {
         1001: {
